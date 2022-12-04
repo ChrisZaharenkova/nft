@@ -1,10 +1,10 @@
-let slide = $('.saller__card'),
+let slide = $('.slider__slide'),
     slider = $('.saller__cards'),
     countSlide=slide.length,
     position=0,
-    shag = 200,
+    shag = $('.slider__slide').width(),
     widthWindow = $('.slider').width(),
-    max = (countSlide * 200) - widthWindow;
+    max = (countSlide * shag) - widthWindow;
 $('.next').click(function(){
   console.log('WindowWidth:'+widthWindow)
   console.log('Maximum:'+max)
